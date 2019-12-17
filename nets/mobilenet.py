@@ -90,8 +90,8 @@ def mobilenet(inputs,
     end_points['Predictions'] = predictions
 
   return logits, end_points
-
-mobilenet.default_image_size = 224
+#ht modify 20191217
+mobilenet.default_image_size = 32 #224
 
 
 def mobilenet_arg_scope(weight_decay=0.0):
